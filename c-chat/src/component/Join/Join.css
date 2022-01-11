@@ -1,0 +1,90 @@
+.joinPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(31, 31, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinContainer > img {
+    width: 10vmax;
+}
+
+.joinContainer > h1 {
+    color: white;
+    font-size: 2.5vmax;
+    font-family: 'Roboto';
+    width: 25vmax;
+    border-bottom: 0.2vmax solid white;
+    padding: 1vmax;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#joinInput {
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+    margin: 2vmax;
+    box-sizing: border-box;
+}
+
+.joinBtn {
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+    background-color: crimson;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto';
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.joinBtn:hover {
+    background-color: rgb(180, 27, 58);
+}
+
+@media (max-aspect-ratio: 7/10) {
+    
+    .joinContainer {
+        width: 100% ;
+        margin-bottom: 20vw;
+    }
+
+    .joinContainer > img {
+        width: 30vw ;
+    }
+    
+    .joinContainer > h1 {
+        font-size: 6vw ;
+        width: 55vw ;
+        border-bottom: 0.6vw solid white;
+        padding: 3vw;
+    }
+    
+    #joinInput {
+        width: 55vw;
+        padding: 4vw;
+        font-size: 4vw;
+        margin: 5vw;
+    }
+
+    .joinBtn {
+        width: 55vw;
+        padding: 4vw;
+        font-size: 4vw;
+    }
+}
